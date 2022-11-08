@@ -56,6 +56,15 @@ export default function TabNavigation() {
           ),
         }}
       />
+      <Tab.Screen
+        name="Gyroscopio"
+        component={GyroscopioScreen}
+        options={{
+          tabBarIcon: () => (
+            <FontAwesome name="balance-scale" size={24} color={colors.white} />
+          ),
+        }}
+      />
       
     </Tab.Navigator>
   );
