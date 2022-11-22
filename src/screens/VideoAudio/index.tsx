@@ -63,7 +63,7 @@ export default function App() {
                 ref={video}
                 style={styles.video}
                 source={{
-                    uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+                    uri: 'https://file-examples.com/storage/fe7589721d63762859d6962/2017/04/file_example_MP4_640_3MG.mp4',
                 }}
                 useNativeControls
                 resizeMode="contain"
@@ -83,7 +83,7 @@ export default function App() {
             </View>
             <View style={styles.buttons}>
                 <ButtonComp
-                    type='primary'
+                    type='secondary'
                     title={recording ? 'Stop Recording' : 'Start Recording'}
                     onPress={recording ? stopRecording : startRecording}
                 />

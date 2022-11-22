@@ -1,7 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { VideoAudioScreen, AcelerometroScreen, 
-    PedometroScreen, GyroscopioScreen, MagnetoScreen
+import { VideoAudioScreen, AcelerometroScreen
  } from "../screens";
 import colors from "../styles/colors";
 import { Ionicons, MaterialCommunityIcons, FontAwesome, Foundation } from "@expo/vector-icons";
@@ -35,33 +34,6 @@ export default function TabNavigation() {
         options={{
           tabBarIcon: () => (
             <MaterialCommunityIcons name="video" size={24} color={colors.white} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Magneto"
-        component={MagnetoScreen}
-        options={{
-          tabBarIcon: () => (
-            <FontAwesome name="magnet" size={24} color={colors.white} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Pedometro"
-        component={PedometroScreen}
-        options={{
-          tabBarIcon: () => (
-            <Foundation name="foot" size={24} color={colors.white} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Gyroscopio"
-        component={GyroscopioScreen}
-        options={{
-          tabBarIcon: () => (
-            <FontAwesome name="balance-scale" size={24} color={colors.white} />
           ),
         }}
       />

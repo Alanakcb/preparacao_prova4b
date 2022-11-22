@@ -1,7 +1,6 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { VideoAudioScreen, AcelerometroScreen, 
-  PedometroScreen, GyroscopioScreen, MagnetoScreen
+import { VideoAudioScreen, AcelerometroScreen
 } from "../screens";
 import colors from "../styles/colors";
 import { Ionicons, MaterialCommunityIcons, FontAwesome, Foundation } from "@expo/vector-icons";
@@ -13,8 +12,8 @@ export default function DrawerNavigation() {
     <Drawer.Navigator
       screenOptions={{
         headerShown: true,
-        headerStyle: { backgroundColor: colors.primaryLight },
-        headerTintColor: colors.primary,
+        headerStyle: { backgroundColor: colors.primary },
+        headerTintColor: colors.white,
         drawerStyle: { backgroundColor: colors.primary },
         drawerActiveTintColor: colors.white,
         drawerInactiveTintColor: colors.white,
@@ -42,47 +41,6 @@ export default function DrawerNavigation() {
           drawerIcon: () => (
             <FontAwesome
               name="car"
-              size={24}
-              color={colors.white}
-            />
-          ),
-        }}
-      />
-      <Drawer.Screen 
-        name="Pedometro"
-        component={PedometroScreen}
-        options={{
-          drawerLabel: "Pedômetro",
-          drawerIcon: () => (
-            <Foundation
-              name="foot"
-              size={48}
-              color={colors.white}
-            />
-          ),
-        }}
-      />
-      <Drawer.Screen
-        name="Magneto"
-        component={MagnetoScreen}
-        options={{
-          drawerLabel: "Magneto",
-          drawerIcon: () => (
-            <FontAwesome name="magnet"
-              size={30}
-              color={colors.white}
-            />
-          ),
-        }}
-      />
-      <Drawer.Screen
-        name="Gyroscopio"
-        component={GyroscopioScreen}
-        options={{
-          drawerLabel: "Gyroscópio",
-          drawerIcon: () => (
-            <FontAwesome
-              name="balance-scale"
               size={24}
               color={colors.white}
             />

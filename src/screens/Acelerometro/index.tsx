@@ -47,11 +47,11 @@ export default function Acelerometro() {
             <Image source={require("../../assets/estrada.gif")} style={styles.fundo} />
             <Image source={require("../../assets/carro.png")} 
             style={{
-                width: 70,
-                height: 50,
+                width: 100,
+                height: 100,
                 flex: 1,
                 position: 'absolute',
-                top: 150,
+                top: 400,
                 left: (Dimensions.get("window").width * Math.pow(data.x, 2))
             }}
             />
